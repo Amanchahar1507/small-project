@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .file {
+      display:flex;
+      flex-direction:row;
+      align-items: center;
+      background-color: antiquewhite;
+      background-size: 100%;
+      height:100%;
+    }
+    .pict {
+      display:flex;
+      flex-direction:row;
+      background-color: white;
+      width:40vw;
+      height:50vh;
+      margin-left:400px;
+      margin-top:150px;
+      margin-bottom:150px;
+      border-radius: 10px;
+    }
+    .picture {
+      display:flex;
+      justify-content: left;
+      background-size: 25%;
+      
+      
+    }
+    .picture img{
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      height:50vh;
+      width:20vw;
+
+    }
+    .word{
+      display:flex;
+      flex-direction: column;
+      justify-content: right;
+      background-color: white;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      height:40vh;
+      width:20vw;
+    }
+    .word h4{
+      display:flex;
+      font-weight: 15px;
+      color: black;
+      margin-left:20px;
+    }
+    .word h1{
+      font-weight: 80px;
+      color: black;
+      margin-left: 20px;
+    }
+    .word .p1{
+      margin-left: 20px;
+      margin-top: 0px;
+    }
+    .word .cost{
+      display:flex;
+      flex-direction: row;
+      margin-left: 20px;
+      
+    }
+    .word .p2{
+      font-size: 30px;
+      color: green;
+      margin-top:0px;
+      font-weight:2000px;
+    }
+    .word .p3{
+      padding-left: 90px;
+      font-size: 10px;
+    }
+    .word button{
+      margin-right:60px;
+      margin-left:60px;
+      padding: 5px;
+      border-radius: 5px;
+      color:white;
+      background-color: green;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media(max-width:1300px)and (min-width:1000px){
+      .pict{
+        width:50vw;
+        height:60vh;
+        margin-left:300px;
+       margin-top:100px;
+       margin-bottom:100px;
+       border-radius: 10px;
+      }
+
+      .picture img{
+      height:60vh;
+      width:25vw;
+
+    }
+    .word{
+      height:60vh;
+      width:25vw;
+    }
+    .word h4{
+      font-weight: 20px;
+      margin-left:20px;
+      margin-top:5px;
+    }
+    }
+    
+    @media(max-width:999px){
+      .pict{
+        width:40vw;
+        height:50vh;
+        
+      }
+
+      .picture img{
+      height:50vh;
+      width:20vw;
+
+    }
+    .word{
+      height:50vh;
+      width:20vw;
+    }
+    .word h4{
+      margin-left:20px;
+      margin-top:30px;
+      font-size: 12px;
+    }
+    .word h1{
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size:25px;
+    }
+    .word .p1{
+      margin-left: 20px;
+      margin-top: 0px;
+      font-size:12px;
+    }
+    .word .p2{
+      font-size:20px;
+      margin-top:5px;
+      margin-left:20px;
+    }
+    .word .p3{
+      padding-left: 30px;
+      font-size: 10px;
+      margin-top:5px;
+    }
+    .word button{
+      margin-right:30px;
+      margin-left:30px;
+      padding: 5px;
+      margin-top:0px;
+    }
+    }
+
+    @media(max-width:830px){
+      .word h4{
+      margin-left:20px;
+      margin-top:25px;
+      font-size: 10px;
+    }
+    .word h1{
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size:25px;
+    }
+    .word .p1{
+      margin-left: 20px;
+      margin-top: 5px;
+      font-size:10px;
+    }
+    .word .p2{
+      font-size:20px;
+      margin-top:5px;
+      margin-left:10px;
+    }
+    .word .p3{
+      padding-left: 20px;
+      font-size: 10px;
+      margin-top:5px;
+    }
+    .word button{
+      margin-right:30px;
+      margin-left:20px;
+      padding: 5px;
+      margin-top:0px;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="file">
+    <div class="pict">
+    <div class="picture">
+      <img src="images/image-product-desktop.jpg" alt="img">
+    </div>
+    <div class = "word">
+      <h4 class="h4">Preview</h4>  
+      <h1 class="h1">Gabrielle Essence Eau De Parfum</h1>
+      <p class ="p1">
+        A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+       Perfumer-Creator for the House of CHANEL.
+      </p>
+      <div class="cost">
+        <p class = "p2">
+          $149.99
+          <p class="p3" style="text-decoration: line-through;">
+            $169.99
+          </p>
+        </p>
+      </div>
+      
+       
+      
+       <button>Add to Cart</button>
+      </div>   
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Aman Chahar</a>.
+  </div>
+</body>
+</html>
